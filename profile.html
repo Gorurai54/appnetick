@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile Page</title>
+</head>
+<body>
+  <h1 id="profileName">Profile</h1>
+
+  <script>
+    // URL: /u/username
+    let path = window.location.pathname;
+    let username = path.split("/").pop(); // last part
+    document.getElementById("profileName").innerText = "Profile: " + username;
+  </script>
+</body>
+</html>
